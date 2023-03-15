@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <div class="buttons">
+            <!-- додати на кнопку відкриття data-open-modal="назва-модалки" -->
+            <button class="btn" type="button" data-open-modal="modal-1">Open modal 1</button>
+            <button class="btn" type="button" data-open-modal="modal-2">Open modal 2</button>
+        </div>
+
+        <!-- modal 1 -->
+
+        <!-- додати на модалку data-modal="назва-модалки", назва повинна відповідати назві в кнопці -->
+        <div class="modal one is-hidden" data-modal="modal-1">
+            <!-- додаємо на кнопку закриття атрибут data-close-modal  -->
+            <button class="close-modal" type="button" data-close-modal>x</button>
+            <h2>Modal 1</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat numquam, rerum quos
+            officiis cum praesentium quidem quam incidunt accusantium deleniti!
+
+            <!-- додати на кнопку відкриття data-open-modal="назва-модалки" -->
+            <!-- додаємо на кнопку закриття атрибут data-close-modal  -->
+            <button class="btn" type="button" data-close-modal data-open-modal="modal-3">
+                Open modal 3
+            </button>
+        </div>
+
+        <!-- modal 2 -->
+
+        <div class="modal two is-hidden" data-modal="modal-2">
+            <button class="close-modal" type="button" data-close-modal>x</button>
+            <h2>Modal 2</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat numquam, rerum quos
+            officiis cum praesentium quidem quam incidunt accusantium deleniti!
+            <button class="btn" type="button" data-close-modal data-open-modal="modal-4">
+                Open modal 4
+            </button>
+        </div>
+
+        <!-- modal 3 -->
+
+        <div class="modal three is-hidden" data-modal="modal-3">
+            <button class="close-modal" type="button" data-close-modal>x</button>
+            <h2>Modal 3</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat numquam, rerum quos
+            officiis cum praesentium quidem quam incidunt accusantium deleniti!
+        </div>
+
+        <!-- modal 4 -->
+
+        <div class="modal four is-hidden" data-modal="modal-4">
+            <button class="close-modal" type="button" data-close-modal>x</button>
+            <h2>Modal 4</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat numquam, rerum quos
+            officiis cum praesentium quidem quam incidunt accusantium deleniti!
+        </div>
+
+        <script src="./js/modal.js"></script>
+    </body>
+</html>
